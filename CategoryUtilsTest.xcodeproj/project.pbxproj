@@ -13,6 +13,10 @@
 		E9E137171CEEE7590003A5E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E137151CEEE7590003A5E0 /* Main.storyboard */; };
 		E9E137191CEEE7590003A5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E137181CEEE7590003A5E0 /* Assets.xcassets */; };
 		E9E1371C1CEEE7590003A5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E1371A1CEEE7590003A5E0 /* LaunchScreen.storyboard */; };
+		E9E1372D1CEEE7620003A5E0 /* NSData+String.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E137261CEEE7620003A5E0 /* NSData+String.m */; };
+		E9E1372E1CEEE7620003A5E0 /* NSMutableData+Append.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E137281CEEE7620003A5E0 /* NSMutableData+Append.m */; };
+		E9E1372F1CEEE7620003A5E0 /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1372A1CEEE7620003A5E0 /* NSString+Hex.m */; };
+		E9E137301CEEE7620003A5E0 /* UIImage+ColorToImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1372C1CEEE7620003A5E0 /* UIImage+ColorToImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,16 @@
 		E9E137181CEEE7590003A5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E1371B1CEEE7590003A5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9E1371D1CEEE7590003A5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E137241CEEE7620003A5E0 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		E9E137251CEEE7620003A5E0 /* NSData+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+String.h"; sourceTree = "<group>"; };
+		E9E137261CEEE7620003A5E0 /* NSData+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+String.m"; sourceTree = "<group>"; };
+		E9E137271CEEE7620003A5E0 /* NSMutableData+Append.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Append.h"; sourceTree = "<group>"; };
+		E9E137281CEEE7620003A5E0 /* NSMutableData+Append.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Append.m"; sourceTree = "<group>"; };
+		E9E137291CEEE7620003A5E0 /* NSString+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hex.h"; sourceTree = "<group>"; };
+		E9E1372A1CEEE7620003A5E0 /* NSString+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hex.m"; sourceTree = "<group>"; };
+		E9E1372B1CEEE7620003A5E0 /* UIImage+ColorToImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorToImage.h"; sourceTree = "<group>"; };
+		E9E1372C1CEEE7620003A5E0 /* UIImage+ColorToImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorToImage.m"; sourceTree = "<group>"; };
+		E9E137311CEEE7880003A5E0 /* CategoryUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 		E9E1370B1CEEE7590003A5E0 /* CategoryUtilsTest */ = {
 			isa = PBXGroup;
 			children = (
+				E9E137231CEEE7620003A5E0 /* categoryUtils */,
 				E9E1370F1CEEE7590003A5E0 /* AppDelegate.h */,
 				E9E137101CEEE7590003A5E0 /* AppDelegate.m */,
 				E9E137121CEEE7590003A5E0 /* ViewController.h */,
@@ -77,6 +92,23 @@
 				E9E1370D1CEEE7590003A5E0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9E137231CEEE7620003A5E0 /* categoryUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E9E137241CEEE7620003A5E0 /* Config.h */,
+				E9E137251CEEE7620003A5E0 /* NSData+String.h */,
+				E9E137261CEEE7620003A5E0 /* NSData+String.m */,
+				E9E137271CEEE7620003A5E0 /* NSMutableData+Append.h */,
+				E9E137281CEEE7620003A5E0 /* NSMutableData+Append.m */,
+				E9E137291CEEE7620003A5E0 /* NSString+Hex.h */,
+				E9E1372A1CEEE7620003A5E0 /* NSString+Hex.m */,
+				E9E1372B1CEEE7620003A5E0 /* UIImage+ColorToImage.h */,
+				E9E1372C1CEEE7620003A5E0 /* UIImage+ColorToImage.m */,
+				E9E137311CEEE7880003A5E0 /* CategoryUtils.h */,
+			);
+			path = categoryUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E137301CEEE7620003A5E0 /* UIImage+ColorToImage.m in Sources */,
 				E9E137141CEEE7590003A5E0 /* ViewController.m in Sources */,
+				E9E1372F1CEEE7620003A5E0 /* NSString+Hex.m in Sources */,
 				E9E137111CEEE7590003A5E0 /* AppDelegate.m in Sources */,
+				E9E1372E1CEEE7620003A5E0 /* NSMutableData+Append.m in Sources */,
 				E9E1370E1CEEE7590003A5E0 /* main.m in Sources */,
+				E9E1372D1CEEE7620003A5E0 /* NSData+String.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CategoryUtilsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wise.CategoryUtilsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CategoryUtilsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wise.CategoryUtilsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
